@@ -1,28 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bla</title>
     
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <form action="/contact" method="post">
-    <label for="fname"></label>
-    <input type="text" name="fname">
-    <label for="date"></label>
-    <input type="date" name="date">
-    <button type="submit">Send info to server</button>
-</form>
+  
 </body>
 </html>
 
 
+<body class="bg-info">
+  <div class="container ">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">FlowerPower</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Meny <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+
+   
+    </div>
+    <div class="register">
+    <form action="/registerUser" method="post">
+      <label for="email">Användarnamn</label>
+      <input type="email" name="email" id="email"/>
+      <label for="password">Lösenord</label>
+      <input type="password" name="password" id="password"/>
+      <button type="submit">Register</button>
+  
+  </form>
+</div>
+<div class="login">
+  <form action="/login" method="post">
+    <label for="email">Användarnamn</label>
+    <input type="email" name="email" id="email"/>
+    <label for="password">Lösenord</label>
+    <input type="password" name="password" id="password"/>
+    <button type="submit">Login</button>
+
+</form>
+</div>
+    <form action="/contact" method="post">
+    </form>
+  </div>
+  <div class="container-fluid center">
+   
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="./images/flower2.jpg" alt="Card image" style="height:700px  ;">
+          <div class="card-body">
+            <h4 class="card-title">Roses</h4>
+            <p class="card-text">It's no wonder that roses have been referenced in literature and music for centuries.
+              Archaeologists have discovered rose fossils that date back 35 million years. Even more shocking, the
+              oldest living rose is 1,000 years old. This impressively enduring rose grows on a wall on the Hildesheim
+              Cathedral in</p>
+            <a href="https://www.interflora.se/inspiration/blomfakta-rosor/#!/" class="btn btn-dark">Mer fakta</a>
+          </div>
+        </div>
+     
+    </div>
+    <div class="col">
+      <div class="card" >
+        <img class="card-img-top" src="./images/flower6.jpg" alt="Card image" style="height:700px">
+        <div class="card-body">
+          <h4 class="card-title">Sunflowers</h4>
+          <p class="card-text">Like potatoes, tomatoes, and corn, the cheerful plants didn't originate in Europe. They
+            were cultivated in North America as far back as 3000 BCE, when they were developed for food, medicine, dye,
+            and oil. Then, they were exported to the rest of the world by Spanish conquistadors around 1500ffeefefefeffdw.</p>
+          <a href="https://www.interflora.se/inspiration/blomfakta-solros/#!/" class="btn btn-dark">Mer fakta</a>
+        </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img class="card-img-top" src="./images/flower4.jpg" alt="Card image" style="height:700px">
+          <div class="card-body">
+            <h4 class="card-title">Lilys</h4>
+            <p class="card-text">The association with symbolism and meaning in the colors of lilies has a long and
+              storied history. The association with symbolism and meaning in the colors of lilies can be traced back all
+              the way to ancient times. Lilies figured particularly prominently in ancient mythology, too. For example,
+              </p>
+            <a href="https://sv.wikipedia.org/wiki/Liljesläktet" class="btn btn-dark">Mer fakta</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    
+     
+     
+     
+    
+      <a href="localhost:3000/"><button type="button" class=" button btn btn-secondary btn-lg btn-block">Block level button</button></a>
+
+      
+     
+  
+
+      
+        
 
 
 
 
+</body>
 
+</html>
 
 
 

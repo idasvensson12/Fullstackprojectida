@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-email: string,
-password: string,
+email: String,
+password: String,
 });
 
 const User = mongoose.model("User", userSchema);
@@ -16,6 +16,6 @@ password:inPassword,
     user.save();
 
 }
-exports,getUser = async function (uEmail){
+exports.getUser = async function (uEmail){
 return await User.findOne({ email: uEmail});
 };

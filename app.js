@@ -2,13 +2,14 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const staticDir =__dirname + "\\static\\";
+const db = require ("./databasemodule");
 const UserModel = require ("./UserModel");
 
 app.use(express.static(staticDir));
 app.use(express.urlencoded());
 app.use(express.json());
 
-app.get('/', (req, res) => res.sendFile(staticDir + "html\\index.html"));
+app.get('/', (req, res) => res.sendFile(staticDir + "html\\contact.html"));
 
 app.get('/contact', (req, res) => 
 res.sendFile(staticDir + "html\\contact.html")
